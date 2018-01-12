@@ -13,3 +13,6 @@
 [submodule "vim/vim.symlink/pack/default/start/vim-surround"]
 	path = vim/vim.symlink/pack/default/start/vim-surround
 	url = https://github.com/tpope/vim-surround
+[submodule "prezto/.zprezto.symlink"]
+	path = prezto/zprezto.symlink
+	url = https://github.com/sorin-ionescu/prezto.git

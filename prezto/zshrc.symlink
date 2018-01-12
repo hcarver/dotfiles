@@ -1,0 +1,22 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Customize to your needs...
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+alias be='bundle exec'
+
+alias mount-data='sshfs -o auto_cache ubuntu@files.hywel:/data $HOME/data'
+alias unmount-data='umount $HOME/data'
+alias restart-dns='sudo killall -HUP mDNSResponder'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
