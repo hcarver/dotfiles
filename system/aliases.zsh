@@ -1,10 +1,3 @@
-# grc overides for ls
-#   Made possible through contributions from generous benefactors like
-#   `brew install coreutils`
-if $(gls &>/dev/null)
-then
-  alias ls="gls -F --color"
-  alias l="gls -lAh --color"
-  alias ll="gls -l --color"
-  alias la='gls -A --color'
-fi
+# For mounting my datastore
+alias mount-data='sshfs -o auto_cache ubuntu@files.hywel:/data $HOME/data'
+alias unmount-data='umount $HOME/data'

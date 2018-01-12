@@ -9,6 +9,8 @@
         wtf     = !$ZSH/bin/git-wtf
         rank-contributors = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
+        st = status
+        hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 [color]
         diff = auto
         status = auto
@@ -19,6 +21,10 @@
         editor = vim
 [apply]
         whitespace = nowarn
+[fetch]
+	prune = true
+[merge]
+        tool = kdiff3
 [mergetool]
         keepBackup = false
 [difftool]
@@ -30,4 +36,4 @@
         # for more information on different options of the below setting.
         #
         # Setting to git 2.0 default to suppress warning message
-        default = simple
+        default = matching

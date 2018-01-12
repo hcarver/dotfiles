@@ -1,4 +1,52 @@
-syntax on
+colorscheme badwolf " Colorscheme
+syntax enable " enable syntax processing
+filetype plugin indent on " Use filetypes
 
-" Wrap gitcommit file types at the appropriate length
-filetype indent plugin on
+set hidden " files are hidden instead of closed
+
+set tabstop=2 " visual spaces for tabs
+set softtabstop=2 " spaces for tab presses
+set expandtab " expand tabs
+set shiftwidth=2 " change indents by 2 spaces at a time
+set backspace=indent,eol,start " Make backspace a bit more predictable
+
+set number " show line numbers
+set ruler " show position in line
+set showcmd " show command as it's being typed.
+set cursorline " highlight line containing cursor
+set wildmenu " visual autocomplete for command menu
+set lazyredraw " redraw only when we need to.
+set showmatch " highlight matching parenthesis when cursor is on one
+
+set incsearch " search as characters are entered
+set hlsearch "highlight all matches during search
+
+"set foldenable " Enable folding
+"set foldlevelstart=10 " open most folds by default
+"set foldmethod=indent " fold based on indent level
+
+set backup " Enable backups so changes aren't lost
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp " Keep backups out of the current folder tree
+set backupskip=/tmp/*,/private/tmp/*
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set writebackup
+
+" Show current number, show line numbers as relative
+set number
+set relativenumber
+function! ToggleNumber()
+  if(&relativenumber == 1)
+    set norelativenumber
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+
+autocmd BufWritePre * %s/\s\+$//e " Strip trailing whitespaces from lines
+imap jk <Esc> " jk as escape for speed.
+
+" Better searching with silver searcher
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif

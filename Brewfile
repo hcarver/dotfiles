@@ -1,5 +1,11 @@
 cask_args appdir: '/Applications'
 
+This needs updating before I actually use it
+so I'm just going to leave it unchanged for now.
+
+Except with this comment so that using it fails,
+and I remember to fix it.
+
 tap 'homebrew/bundle'
 tap 'puma/puma'
 
