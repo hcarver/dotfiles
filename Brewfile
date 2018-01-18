@@ -2,6 +2,9 @@ cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
 
+# This is outside the normal order because Fuse is required for sshfs
+cask 'osxfuse'
+
 brew 'awscli'
 brew 'fzf'
 brew 'git'
@@ -13,6 +16,7 @@ brew 'postgresql'
 brew 'python3'
 brew 'readline'
 brew 'redis'
+brew 'sshfs'
 brew 'terraform'
 brew 'the_silver_searcher'
 brew 'vim'
