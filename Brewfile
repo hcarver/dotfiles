@@ -26,6 +26,7 @@ brew 'yarn'
 brew 'zsh'
 
 cask '1password'
+cask 'docker'
 cask 'google-chrome'
 cask 'gimp'
 cask 'handbrake'
