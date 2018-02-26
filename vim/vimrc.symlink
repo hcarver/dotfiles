@@ -44,7 +44,8 @@ function! ToggleNumber()
 endfunc
 
 autocmd BufWritePre * %s/\s\+$//e " Strip trailing whitespaces from lines
-imap jk <Esc> " jk as escape for speed.
+" Map jk to Escape, for speed
+inoremap jk <Esc>
 
 " Better searching with silver searcher
 if executable('ag')
