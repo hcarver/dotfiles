@@ -19,3 +19,6 @@
 [submodule "vim/vim.symlink/pack/default/start/ack.vim"]
 	path = vim/vim.symlink/pack/default/start/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/vim.symlink/pack/default/start/vim-airline"]
+	path = vim/vim.symlink/pack/default/start/vim-airline
+	url = git@github.com:vim-airline/vim-airline.git

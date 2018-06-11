@@ -2,3 +2,5 @@
 *~
 *.swp
 **/.terraform/*
+*.orig
+.byebug_history
