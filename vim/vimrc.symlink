@@ -52,6 +52,11 @@ noremap g<CR> O<Esc>j
 autocmd CmdwinEnter * nnoremap <CR> <CR>
 autocmd BufReadPost quickfix nnoremap <CR> <CR>
 
+" NERDTree
+map <C-n> :NERDTreeToggle<CR>
+" Open on startup
+autocmd vimenter * NERDTree
+
 " Better searching with silver searcher
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
