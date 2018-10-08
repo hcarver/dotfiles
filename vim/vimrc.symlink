@@ -1,4 +1,4 @@
-colorscheme badwolf " Colorscheme
+colorscheme gruvbox " Colorscheme
 syntax enable " enable syntax processing
 filetype plugin indent on " Use filetypes
 
