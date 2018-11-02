@@ -4,3 +4,4 @@
 **/.terraform/*
 *.orig
 .byebug_history
+.idea
