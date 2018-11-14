@@ -31,3 +31,6 @@
 [submodule "vim/vim.symlink/pack/default/start/vim-colorschemes"]
 	path = vim/vim.symlink/pack/default/start/vim-colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
+[submodule "vim/vim.symlink/pack/default/start/vim-visual-multi"]
+	path = vim/vim.symlink/pack/default/start/vim-visual-multi
+	url = git@github.com:mg979/vim-visual-multi.git

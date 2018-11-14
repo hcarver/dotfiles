@@ -56,8 +56,14 @@ autocmd BufReadPost quickfix nnoremap <CR> <CR>
 map <C-n> :NERDTreeToggle<CR>
 " Open on startup
 autocmd vimenter * NERDTree
+" Cmd to quit a buffer without closing the window
+map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>.
 
 " Better searching with silver searcher
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+let g:VM_maps = {}
+let g:VM_maps["Add Cursor Down"] = '<ESC>j'
+let g:VM_maps["Add Cursor Up"]   = '<ESC>k'
