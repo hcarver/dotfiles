@@ -30,6 +30,7 @@ set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp " Keep backups out of the cu
 set backupskip=/tmp/*,/private/tmp/*
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
+set timeoutlen=300 " Key combinations have to be within 300ms
 
 " Show current number, show line numbers as relative
 set number
@@ -53,9 +54,7 @@ autocmd CmdwinEnter * nnoremap <CR> <CR>
 autocmd BufReadPost quickfix nnoremap <CR> <CR>
 
 " NERDTree
-map <C-n> :NERDTreeToggle<CR>
-" Open on startup
-autocmd vimenter * NERDTree
+map <C-h> :NERDTreeToggle<CR>
 " Cmd to quit a buffer without closing the window
 map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>.
 
@@ -65,5 +64,10 @@ if executable('ag')
 endif
 
 let g:VM_maps = {}
+let g:VM_maps["Select All"]      = '<ESC>A'
 let g:VM_maps["Add Cursor Down"] = '<ESC>j'
+let g:VM_maps["Select j"]        = '<S-Down>'
+let g:VM_maps["Select k"]        = '<S-Up>'
+let g:VM_maps["Select l"]        = '<S-Right>'
+let g:VM_maps["Select h"]        = '<S-Left>'
 let g:VM_maps["Add Cursor Up"]   = '<ESC>k'
