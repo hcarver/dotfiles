@@ -57,6 +57,8 @@ autocmd BufReadPost quickfix nnoremap <CR> <CR>
 map <C-h> :NERDTreeToggle<CR>
 " Cmd to quit a buffer without closing the window
 map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>.
+" Don't go into Ex mode. I never actually want to, and yet it happens.
+map Q <Nop>
 
 " Better searching with silver searcher
 if executable('ag')
