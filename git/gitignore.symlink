@@ -5,3 +5,4 @@
 *.orig
 .byebug_history
 .idea
+__pycache__

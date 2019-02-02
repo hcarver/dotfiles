@@ -1,6 +1,7 @@
 colorscheme gruvbox " Colorscheme
 syntax enable " enable syntax processing
 filetype plugin indent on " Use filetypes
+set smartindent
 
 set hidden " files are hidden instead of closed
 
@@ -10,7 +11,11 @@ set expandtab " expand tabs
 set shiftwidth=2 " change indents by 2 spaces at a time
 set backspace=indent,eol,start " Make backspace a bit more predictable
 
+set encoding=utf-8  " Default to UTF-8 encoding
+set visualbell      " Turn off beeping
+
 set number " show line numbers
+set colorcolumn=120 " set vertical marker at col 120, as a soft maximum line length
 set ruler " show position in line
 set showcmd " show command as it's being typed.
 set cursorline " highlight line containing cursor
@@ -53,12 +58,27 @@ noremap g<CR> O<Esc>j
 autocmd CmdwinEnter * nnoremap <CR> <CR>
 autocmd BufReadPost quickfix nnoremap <CR> <CR>
 
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 " NERDTree
 map <C-h> :NERDTreeToggle<CR>
 " Cmd to quit a buffer without closing the window
 map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>.
+
 " Don't go into Ex mode. I never actually want to, and yet it happens.
 map Q <Nop>
+
+" Handy dandy shortcuts
+nnoremap <C-n> :bprev<CR> " Previous buffer
+nnoremap <C-m> :bnext<CR> " Next buffer
 
 " Better searching with silver searcher
 if executable('ag')
