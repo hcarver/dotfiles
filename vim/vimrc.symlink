@@ -86,7 +86,7 @@ if executable('ag')
 endif
 
 let g:VM_maps = {}
-let g:VM_maps["Select All"]      = '<ESC>A'
+let g:VM_maps["Select All"]      = '<ESC>a'
 let g:VM_maps["Add Cursor Down"] = '<ESC>j'
 let g:VM_maps["Select j"]        = '<S-Down>'
 let g:VM_maps["Select k"]        = '<S-Up>'
