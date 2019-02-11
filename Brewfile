@@ -2,9 +2,6 @@ cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
 
-# This is outside the normal order because Fuse is required for sshfs
-cask 'osxfuse'
-
 brew 'awscli'
 brew 'cloc'
 brew 'fzf'
@@ -33,6 +30,7 @@ brew 'zsh'
 
 cask '1password'
 cask 'android-file-transfer'
+cask 'android-platform-tools'
 cask 'anki'
 cask 'balsamiq-mockups'
 cask 'chromedriver'
