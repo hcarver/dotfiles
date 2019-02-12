@@ -54,6 +54,8 @@ defaults -currentHost write -g com.apple.keyboard.modifiermapping.1452-630-0 -ar
 			<real>30064771129</real>
 </dict>'
 
+chsh -s /bin/zsh
+
 #############
 # HARDENING #
 #############
