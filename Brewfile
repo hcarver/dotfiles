@@ -1,6 +1,7 @@
 cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
+tap 'heroku/brew'
 
 brew 'awscli'
 brew 'cloc'
@@ -20,7 +21,6 @@ brew 'python3'
 brew 'rbenv'
 brew 'readline'
 brew 'redis'
-brew 'sshfs'
 brew 'terraform'
 brew 'the_silver_searcher'
 brew 'tree'
