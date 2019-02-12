@@ -1,7 +1,6 @@
 # Sets reasonable macOS defaults.
 #
-# Or, in other words, set shit how I like in macOS.
-#
+# Or, in other words, set shit how I like in macOS.  #
 # The original idea (and a couple settings) were grabbed from:
 #   https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 #
@@ -39,3 +38,42 @@ defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+
+# Tap to click
+defaults -currentHost write -globalDomain com.apple.mouse.tapBehavior -int 1
+# Prefer non-natural scrolling
+defaults write -g com.apple.swipescrolldirection -bool NO
+# Autohide dock
+defaults write com.apple.Dock autohide -bool TRUE
+# Map caps lock to escape
+defaults -currentHost write -g com.apple.keyboard.modifiermapping.1452-630-0 -array \
+'<dict>
+			<key>HIDKeyboardModifierMappingDst</key>
+			<real>30064771113</real>
+			<key>HIDKeyboardModifierMappingSrc</key>
+			<real>30064771129</real>
+</dict>'
+
+#############
+# HARDENING #
+#############
+# No guest users
+sudo defaults write com.apple.loginwindow GuestEnabled -bool NO
+# Require password immediately after sleep or screen saver begins
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+# Enable firewall
+sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 1
+
+# Anonymous computer name
+sudo scutil --set ComputerName "Very Little Gravitas Indeed"
+
+# Known safe DNS
+sudo networksetup -setdnsservers Wi-Fi 1.1.1.1 1.0.0.1
+
+# Files encrypted while asleep
+sudo sh -c 'pmset -a destroyfvkeyonstandby 1; pmset -a hibernatemode 25; pmset -a powernap 0; pmset -a standby 0; pmset -a standbydelay 0; pmset -a autopoweroff 0'
+
+# Enable filevault
+sudo fdesetup enable
