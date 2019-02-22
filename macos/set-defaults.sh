@@ -54,7 +54,18 @@ defaults -currentHost write -g com.apple.keyboard.modifiermapping.1452-630-0 -ar
 			<real>30064771129</real>
 </dict>'
 
+# Set shell
 chsh -s /bin/zsh
+# Faster key repeat
+defaults write "Apple Global Domain" InitalKeyRepeat -int 15
+defaults write "Apple Global Domain" KeyRepeat -int 15
+
+# Show percentage left on battery
+defaults write com.apple.menuextra.battery ShowPercent -bool TRUE
+# Show date in clock
+defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM  HH:mm"
+# Enable the locate database
+sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 
 #############
 # HARDENING #
@@ -70,12 +81,13 @@ sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 1
 
 # Anonymous computer name
 sudo scutil --set ComputerName "Very Little Gravitas Indeed"
+sudo scutil --set LocalHostName VeryLittleGravitasIndeed
 
 # Known safe DNS
 sudo networksetup -setdnsservers Wi-Fi 1.1.1.1 1.0.0.1
 
 # Files encrypted while asleep
-sudo sh -c 'pmset -a destroyfvkeyonstandby 1; pmset -a hibernatemode 25; pmset -a powernap 0; pmset -a standby 0; pmset -a standbydelay 0; pmset -a autopoweroff 0'
+sudo sh -c 'pmset -a destroyfvkeyonstandby 1'
 
 # Enable filevault
 sudo fdesetup enable

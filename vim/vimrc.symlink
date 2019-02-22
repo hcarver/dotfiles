@@ -50,10 +50,6 @@ function! ToggleNumber()
 endfunc
 
 autocmd BufWritePre * %s/\s\+$//e " Strip trailing whitespaces from lines
-" Enter in normal mode to create new line, staying in normal mode.
-noremap <CR> o<Esc>
-" As above but new line above
-noremap g<CR> O<Esc>j
 " Make sure enter still works for other things
 autocmd CmdwinEnter * nnoremap <CR> <CR>
 autocmd BufReadPost quickfix nnoremap <CR> <CR>
