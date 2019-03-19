@@ -18,9 +18,6 @@ defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 # Show the ~/Library folder.
 chflags nohidden ~/Library
 
-# Set a really fast key repeat.
-defaults write NSGlobalDomain KeyRepeat -int 1
-
 # Set the Finder prefs for showing a few different volumes on the Desktop.
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
@@ -55,10 +52,11 @@ defaults -currentHost write -g com.apple.keyboard.modifiermapping.1452-630-0 -ar
 </dict>'
 
 # Set shell
-chsh -s /bin/zsh
+sudo sh -c "echo $(which zsh) >> /etc/shells"
+chsh -s $(which zsh)
 # Faster key repeat
-defaults write "Apple Global Domain" InitalKeyRepeat -int 15
-defaults write "Apple Global Domain" KeyRepeat -int 15
+defaults write "Apple Global Domain" InitialKeyRepeat -int 15
+defaults write "Apple Global Domain" KeyRepeat -int 2
 
 # Show percentage left on battery
 defaults write com.apple.menuextra.battery ShowPercent -bool TRUE
