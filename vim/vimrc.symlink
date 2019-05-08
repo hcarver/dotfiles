@@ -50,9 +50,6 @@ function! ToggleNumber()
 endfunc
 
 autocmd BufWritePre * %s/\s\+$//e " Strip trailing whitespaces from lines
-" Make sure enter still works for other things
-autocmd CmdwinEnter * nnoremap <CR> <CR>
-autocmd BufReadPost quickfix nnoremap <CR> <CR>
 
 " Syntastic
 set statusline+=%#warningmsg#
@@ -71,10 +68,6 @@ map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>.
 
 " Don't go into Ex mode. I never actually want to, and yet it happens.
 map Q <Nop>
-
-" Handy dandy shortcuts
-nnoremap <C-n> :bprev<CR> " Previous buffer
-nnoremap <C-m> :bnext<CR> " Next buffer
 
 " Better searching with silver searcher
 if executable('ag')
