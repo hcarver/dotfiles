@@ -61,3 +61,6 @@
 [submodule "vim/vim.symlink/pack/default/start/vim-indent-object"]
 	path = vim/vim.symlink/pack/default/start/vim-indent-object
 	url = https://github.com/michaeljsmith/vim-indent-object.git
+[submodule "vim/vim.symlink/pack/default/start/ale"]
+	path = vim/vim.symlink/pack/default/start/ale
+	url = https://github.com/w0rp/ale.git
