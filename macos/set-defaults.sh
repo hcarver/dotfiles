@@ -84,8 +84,5 @@ sudo scutil --set LocalHostName VeryLittleGravitasIndeed
 # Known safe DNS
 sudo networksetup -setdnsservers Wi-Fi 1.1.1.1 1.0.0.1
 
-# Files encrypted while asleep
-sudo sh -c 'pmset -a destroyfvkeyonstandby 1'
-
 # Enable filevault
 sudo fdesetup enable
