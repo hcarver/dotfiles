@@ -1,4 +1,5 @@
 colorscheme gruvbox " Colorscheme
+set background=dark " gruvbox doesn't set this properly
 syntax enable " enable syntax processing
 filetype plugin indent on " Use filetypes
 set smartindent
