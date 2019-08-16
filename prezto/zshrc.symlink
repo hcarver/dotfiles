@@ -16,7 +16,9 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 alias be='bundle exec'
 alias dco='docker-compose'
 
+bindkey -e
 bindkey '^[[1;3D' backward-word
 bindkey '^[[1;3C' forward-word
+bindkey "^R" history-incremental-search-backward
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

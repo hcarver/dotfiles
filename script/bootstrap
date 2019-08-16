@@ -49,6 +49,11 @@ setup_gitconfig () {
   fi
 }
 
+setup_kitty () {
+  mkdir -p $HOME/.config/kitty
+
+  link_file "$HOME/.kitty" "$HOME/.config/kitty/kitty.conf"
+}
 
 link_file () {
   local src=$1 dst=$2
@@ -139,6 +144,7 @@ install_dotfiles () {
 
 setup_gitconfig
 install_dotfiles
+setup_kitty
 
 # If we're on a Mac, let's install and setup homebrew.
 if [ "$(uname -s)" == "Darwin" ]
