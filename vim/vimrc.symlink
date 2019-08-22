@@ -13,7 +13,7 @@ set shiftwidth=2 " change indents by 2 spaces at a time
 set backspace=indent,eol,start " Make backspace a bit more predictable
 
 set encoding=utf-8  " Default to UTF-8 encoding
-set visualbell      " Turn off beeping
+set novb            " Turn off beep / visual bell
 
 set number " show line numbers
 set colorcolumn=120 " set vertical marker at col 120, as a soft maximum line length
