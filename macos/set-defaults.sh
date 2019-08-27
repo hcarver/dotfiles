@@ -82,8 +82,5 @@ sudo scutil --set ComputerName "Very Little Gravitas Indeed"
 sudo scutil --set HostName VeryLittleGravitasIndeed
 sudo scutil --set LocalHostName VeryLittleGravitasIndeed
 
-# Known safe DNS
-sudo networksetup -setdnsservers Wi-Fi 1.1.1.1 1.0.0.1
-
 # Enable filevault
 sudo fdesetup enable
