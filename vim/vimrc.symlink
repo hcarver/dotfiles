@@ -93,3 +93,7 @@ let g:VM_maps["Select l"]        = '<S-Right>'
 let g:VM_maps["Select h"]        = '<S-Left>'
 let g:VM_maps["Add Cursor Down"] = '<ESC>J'
 let g:VM_maps["Add Cursor Up"]   = '<ESC>K'
+let g:VM_maps["Undo"]            = 'u'
+let g:VM_maps["Redo"]            = '<C-r>'
+
+let g:VM_theme                   = 'iceblue'
