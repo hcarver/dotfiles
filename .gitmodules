@@ -4,9 +4,6 @@
 [submodule "vim/vim.symlink/pack/default/start/fzf"]
 	path = vim/vim.symlink/pack/default/start/fzf
 	url = git@github.com:junegunn/fzf.git
-[submodule "vim/vim.symlink/pack/default/start/vim-slime-syntax"]
-	path = vim/vim.symlink/pack/default/start/vim-slime-syntax
-	url = https://github.com/slime-lang/vim-slime-syntax
 [submodule "vim/vim.symlink/pack/default/start/vim-surround"]
 	path = vim/vim.symlink/pack/default/start/surround
 	url = https://github.com/tpope/vim-surround
@@ -46,9 +43,6 @@
 [submodule "vim/vim.symlink/pack/default/start/vim-sensible"]
 	path = vim/vim.symlink/pack/default/start/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
-[submodule "vim/vim.symlink/pack/default/start/syntastic"]
-	path = vim/vim.symlink/pack/default/start/syntastic
-	url = https://github.com/scrooloose/syntastic.git
 [submodule "vim/vim.symlink/pack/default/start/vim-textobj-rubyblock"]
 	path = vim/vim.symlink/pack/default/start/vim-textobj-rubyblock
 	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
@@ -64,3 +58,6 @@
 [submodule "vim/vim.symlink/pack/default/start/ale"]
 	path = vim/vim.symlink/pack/default/start/ale
 	url = https://github.com/w0rp/ale.git
+[submodule "vim/vim.symlink/pack/default/start/indentLine"]
+	path = vim/vim.symlink/pack/default/start/indentLine
+	url = https://github.com/Yggdroot/indentLine.git
