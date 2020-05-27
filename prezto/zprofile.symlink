@@ -50,6 +50,7 @@ path=(
   $HOME/sw/android-sdk/platform-tools
   $HOME/bin
   $HOME/.pyenv/shims
+  $HOME/code/skillerwhale/infra/bin
   /usr/bin
   /bin
   /usr/sbin
