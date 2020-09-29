@@ -58,6 +58,3 @@
 [submodule "vim/vim.symlink/pack/default/start/ale"]
 	path = vim/vim.symlink/pack/default/start/ale
 	url = https://github.com/w0rp/ale.git
-[submodule "vim/vim.symlink/pack/default/start/indentLine"]
-	path = vim/vim.symlink/pack/default/start/indentLine
-	url = https://github.com/Yggdroot/indentLine.git
