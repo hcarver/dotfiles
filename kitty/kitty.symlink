@@ -656,6 +656,9 @@ font_size 12
 
 macos_option_as_alt yes
 
+# Combinations where I want the "option" behavior
+map alt+3 send_text all £
+
 #: Use the option key as an alt key. With this set to no, kitty will
 #: use the macOS native Option+Key = unicode character behavior. This
 #: will break any Alt+key keyboard shortcuts in your terminal
