@@ -43,3 +43,5 @@
   sort = version:refname
 [rerere]
 	enabled = false
+[pull]
+	ff = only
