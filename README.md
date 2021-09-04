@@ -40,11 +40,9 @@ script/bootstrap
 
 Extra steps:
 
-* Firefox add-ons
+* Brave add-ons
   * React Developer Tools
   * 1Password X
-  * Firefox Multi-Account Containers
-  * Easy Container Shortcuts
 
 This will symlink the appropriate files in `.dotfiles` to your home directory.
 Everything is configured and tweaked within `~/.dotfiles`.
