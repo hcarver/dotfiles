@@ -27,7 +27,6 @@ brew 'the_silver_searcher'
 brew 'tree'
 brew 'vim'
 brew 'yarn'
-brew 'zsh'
 
 cask '1password'
 cask 'adobe-acrobat-reader'

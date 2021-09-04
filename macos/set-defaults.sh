@@ -52,8 +52,8 @@ defaults -currentHost write -g com.apple.keyboard.modifiermapping.1452-630-0 -ar
 </dict>'
 
 # Set shell
-sudo sh -c "echo $(which zsh) >> /etc/shells"
-chsh -s $(which zsh)
+sudo sh -c "echo $(which fish) >> /etc/shells"
+chsh -s $(which fish)
 # Faster key repeat
 defaults write "Apple Global Domain" InitialKeyRepeat -int 15
 defaults write "Apple Global Domain" KeyRepeat -int 2
