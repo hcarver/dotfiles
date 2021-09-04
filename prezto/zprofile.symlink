@@ -51,6 +51,7 @@ path=(
   $HOME/bin
   $HOME/.pyenv/shims
   $HOME/code/skillerwhale/infra/bin
+  $HOME/code/skillerwhale/scripts
   /usr/bin
   /bin
   /usr/sbin
