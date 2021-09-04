@@ -52,7 +52,6 @@ endfunc
 
 autocmd BufWritePre * %s/\s\+$//e " Strip trailing whitespaces from lines
 set conceallevel=0 " Conceal is only ever annoying to me
-let g:indentLine_setConceal = 0
 
 
 " Syntastic
