@@ -98,3 +98,9 @@ let g:VM_theme                   = 'iceblue'
 
 " Don't conceal speech marks in JSON
 let g:vim_json_syntax_conceal = 0
+
+" Bring in Simplenote credentials from a file that isn't in version control
+" let g:SimplenoteUsername = "your simplenote username"
+" let g:SimplenotePassword = "your simplenote password"
+source ~/.simplenoterc
+let g:SimplenoteFiletype = 'markdown'

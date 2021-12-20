@@ -55,3 +55,6 @@
 [submodule "vim/vim.symlink/pack/default/start/ale"]
 	path = vim/vim.symlink/pack/default/start/ale
 	url = https://github.com/w0rp/ale.git
+[submodule "vim/vim.symlink/pack/default/start/simplenote-vim"]
+	path = vim/vim.symlink/pack/default/start/simplenote-vim
+	url = https://github.com/simplenote-vim/simplenote.vim.git
