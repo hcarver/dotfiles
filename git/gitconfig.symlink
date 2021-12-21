@@ -45,3 +45,5 @@
 	enabled = false
 [pull]
 	ff = only
+[status]
+	submodulesummary = 1
