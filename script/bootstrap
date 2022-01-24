@@ -52,7 +52,10 @@ setup_gitconfig () {
 setup_kitty () {
   mkdir -p $HOME/.config/kitty
 
-  link_file "$HOME/.kitty" "$HOME/.config/kitty/kitty.conf"
+  if ! [ -f "$HOME/.config/kitty/kitty.conf" ]
+  then
+    link_file "$HOME/.kitty" "$HOME/.config/kitty/kitty.conf"
+  fi
 }
 
 link_file () {

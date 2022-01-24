@@ -58,3 +58,6 @@
 [submodule "vim/vim.symlink/pack/default/start/simplenote-vim"]
 	path = vim/vim.symlink/pack/default/start/simplenote-vim
 	url = https://github.com/simplenote-vim/simplenote.vim.git
+[submodule "omf/src"]
+	path = omf/src
+	url = https://github.com/oh-my-fish/oh-my-fish

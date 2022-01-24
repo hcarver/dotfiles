@@ -45,6 +45,7 @@ Extra steps:
   * 1Password X
 * Manually fix CapsLock -> Esc mapping
 * Manually fix scroll direction
+* Install omf with `fish $HOME/.omf/bin/install --path=$HOME/.dotfiles/omf/src --config=$HOME/.dotfiles/omf/config`
 
 This will symlink the appropriate files in `.dotfiles` to your home directory.
 Everything is configured and tweaked within `~/.dotfiles`.
