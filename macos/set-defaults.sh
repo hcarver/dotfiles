@@ -78,9 +78,9 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 1
 
 # Anonymous computer name
-sudo scutil --set ComputerName "Very Little Gravitas Indeed"
-sudo scutil --set HostName VeryLittleGravitasIndeed
-sudo scutil --set LocalHostName VeryLittleGravitasIndeed
+sudo scutil --set ComputerName "Significant Gravitas Shortfall"
+sudo scutil --set HostName SignificantGravitasShortfall
+sudo scutil --set LocalHostName SignificantGravitasShortfall
 
 # Enable filevault
 sudo fdesetup enable
