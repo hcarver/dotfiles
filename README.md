@@ -43,6 +43,8 @@ Extra steps:
 * Brave add-ons
   * React Developer Tools
   * 1Password X
+* Manually fix CapsLock -> Esc mapping
+* Manually fix scroll direction
 
 This will symlink the appropriate files in `.dotfiles` to your home directory.
 Everything is configured and tweaked within `~/.dotfiles`.
