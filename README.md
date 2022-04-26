@@ -30,6 +30,8 @@ There's a few special files in the hierarchy.
 
 ## install
 
+First, update to the latest version of the OS.
+
 Run this:
 
 ```sh
