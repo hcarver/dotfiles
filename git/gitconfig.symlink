@@ -47,3 +47,5 @@
 	ff = only
 [status]
 	submodulesummary = 1
+[init]
+	defaultBranch = main
