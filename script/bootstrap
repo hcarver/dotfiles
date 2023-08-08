@@ -58,6 +58,10 @@ setup_kitty () {
   fi
 }
 
+setup_fish () {
+  link_file "$HOME/.fish" "$HOME/.config/fish"
+}
+
 link_file () {
   local src=$1 dst=$2
 
@@ -148,6 +152,7 @@ install_dotfiles () {
 setup_gitconfig
 install_dotfiles
 setup_kitty
+setup_fish
 
 # If we're on a Mac, let's install and setup homebrew.
 if [ "$(uname -s)" == "Darwin" ]
