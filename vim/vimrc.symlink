@@ -59,8 +59,14 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:ale_lint_on_text_changed = 0
+let g:ale_lint_on_text_changed = 1
 let g:ale_lint_on_save = 1
+let g:ale_fixers = {
+\   'javascript': ['prettier'],
+\   'css': ['prettier'],
+\}
+let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
+let g:ale_fix_on_save = 1
 
 " NERDTree
 map <C-h> :NERDTreeToggle<CR>
