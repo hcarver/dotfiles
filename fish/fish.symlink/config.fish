@@ -4,3 +4,6 @@ alias networkdebug "kitty @ launch --type=tab ping 8.8.8.8 ; kitty @ launch --ty
 
 export EDITOR=vim
 export OMF_CONFIG=$HOME/.omf/config
+export HOMEBREW_CASK_OPTS="--appdir=/Users/h/Applications"
+
+export PATH="$HOME/.local/bin:$PATH"
